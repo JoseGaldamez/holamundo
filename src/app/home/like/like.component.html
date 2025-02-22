@@ -1,0 +1,9 @@
+<p>
+  <ion-button (click)="toggleLike()" fill="clear">
+    <ion-icon *ngIf="like === false" name="heart-outline"></ion-icon>
+    <ion-label *ngIf="like === false">No me gusta</ion-label>
+
+    <ion-icon *ngIf="like === true" name="heart"></ion-icon>
+    <ion-label *ngIf="like === true">Me gusta</ion-label>
+  </ion-button>
+</p>
